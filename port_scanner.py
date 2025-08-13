@@ -5,7 +5,7 @@ def scan_port(host, port):
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(1)  
-        с
+        
         result = sock.connect_ex((host, port))
         
         if result == 0:
@@ -27,3 +27,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
